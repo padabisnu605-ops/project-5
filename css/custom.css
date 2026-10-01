@@ -1,0 +1,1786 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+a,
+button,
+input,
+select,
+textarea {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease,
+    transform 220ms ease;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #0fbb7d;
+  outline-offset: 3px;
+}
+
+
+article,
+figure {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+article:hover,
+figure:hover {
+  transform: translateY(-3px);
+}
+
+article img,
+figure img {
+  transition: transform 420ms cubic-bezier(.2,.7,.2,1);
+}
+
+article:hover img,
+figure:hover img {
+  transform: scale(1.025);
+}
+
+
+a:hover {
+  text-decoration-thickness: 1px;
+}
+
+
+.headerbtn a:hover,
+a.bg-brand:hover,
+button.bg-brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(10, 42, 37, 0.12);
+}
+
+a.border-white:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255,255,255,.10);
+  border-color: rgba(255,255,255,.9);
+}
+
+a.rounded-full.border:hover {
+  text-decoration: none;
+}
+
+.arrow-hover {
+  display: inline-block;
+  transition: transform 220ms cubic-bezier(.2,.7,.2,1),
+              opacity 180ms ease;
+  transform-origin: center;
+  will-change: transform;
+}
+
+
+a:hover > span > .arrow-hover,
+a:focus-visible > span > .arrow-hover,
+a:hover > .arrow-hover,
+a:focus-visible > .arrow-hover,
+button:hover > .arrow-hover,
+button:focus-visible > .arrow-hover {
+  transform: translate(3px, -3px) rotate(45deg);
+}
+
+
+button:hover > .fa-chevron-left.arrow-hover,
+button:focus-visible > .fa-chevron-left.arrow-hover {
+  transform: translateX(-3px);
+}
+
+button:hover > .fa-chevron-right.arrow-hover,
+button:focus-visible > .fa-chevron-right.arrow-hover {
+  transform: translateX(3px);
+}
+
+
+button:hover > .fa-arrow-up.arrow-hover,
+button:focus-visible > .fa-arrow-up.arrow-hover {
+  transform: translateY(-3px);
+}
+
+
+article.relative.overflow-hidden:hover {
+  box-shadow: 0 18px 40px rgba(10, 42, 37, 0.14);
+}
+
+
+a.relative.block.overflow-hidden:hover {
+  box-shadow: 0 14px 34px rgba(10, 42, 37, 0.12);
+}
+
+a.relative.block.overflow-hidden:hover img {
+  transform: scale(1.045);
+}
+
+
+ul img {
+  transition: transform 220ms ease, opacity 180ms ease;
+}
+
+ul li:hover > img {
+  transform: scale(1.04);
+}
+
+
+input,
+select,
+textarea {
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 3px rgba(15, 187, 125, .12);
+}
+
+
+#navlinks {
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+#hamburger span {
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+
+body {
+  animation: pageFade 500ms ease;
+}
+
+@keyframes pageFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 600ms ease, transform 700ms cubic-bezier(.2,.7,.2,1);
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: none;
+}
+
+
+a.font-head > i.fa-car-side {
+  transition: transform 300ms cubic-bezier(.2,.7,.2,1);
+}
+
+
+
+
+a.rounded-full.bg-white:hover {
+  background-color: #0fbb7d;
+  color: #fff;
+}
+
+#hamburger[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+@media (max-width: 1023px) {
+  #navlinks.flex {
+    animation: menuDrop 250ms ease;
+  }
+}
+
+@keyframes menuDrop {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ---------- 4. Hero stats box ---------- */
+.divide-white\/20 > div {
+  transition: background-color 250ms ease;
+}
+
+.divide-white\/20 > div b {
+  transition: color 250ms ease;
+}
+
+.divide-white\/20 > div:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.divide-white\/20 > div:hover b {
+  color: #0fbb7d;
+}
+
+/* ---------- 5. Arrow wala pill button (Discover More, Show All) ---------- */
+a > span.rounded-full {
+  transition: background-color 250ms ease, color 250ms ease;
+}
+
+a.rounded-full.border:hover > span.bg-ink {
+  background-color: #0fbb7d;
+}
+
+a.rounded-full.border:hover > span.bg-white {
+  background-color: #0fbb7d;
+  color: #fff;
+}
+
+a > span > i.fa-arrow-up {
+  transition: transform 220ms cubic-bezier(.2,.7,.2,1);
+}
+
+a:hover > span > i.fa-arrow-up {
+  transform: translate(3px, -3px) rotate(45deg);
+}
+
+/* ---------- 6. Tabs ---------- */
+
+/* underline tab (In Stock, New Cars ...) */
+[data-tabs] button.border-b-2:hover {
+  color: #0fbb7d;
+  border-color: rgba(15, 187, 125, 0.45);
+}
+
+[data-tabs] button.border-b-2[aria-selected="true"]:hover {
+  border-color: #0fbb7d;
+}
+
+/* pill tab (vehicles page) */
+[data-tabs] button.rounded-full[aria-selected="false"]:hover {
+  background-color: #e0f7f0;
+}
+
+/* ---------- 7. Vehicle card ---------- */
+article button[aria-label="Save car"] {
+  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+article button[aria-label="Save car"]:hover {
+  background-color: #0fbb7d;
+  color: #fff;
+  transform: scale(1.12);
+}
+
+article h3 a:hover {
+  color: #0fbb7d;
+}
+
+/* ---------- 8. Why Choose Us icon ---------- */
+div > i.text-3xl.text-brand {
+  display: inline-block;
+  transition: transform 300ms cubic-bezier(.2,.7,.2,1);
+}
+
+div:hover > i.text-3xl.text-brand {
+  transform: translateY(-4px) scale(1.12);
+}
+
+/* ---------- 9. Browse by Type card ---------- */
+a.relative.block.overflow-hidden img {
+  transition: transform 420ms cubic-bezier(.2,.7,.2,1);
+}
+
+a.relative.block.overflow-hidden > span {
+  transition: background-color 250ms ease, color 250ms ease, transform 250ms ease;
+}
+
+a.relative.block.overflow-hidden:hover > span {
+  background-color: #0fbb7d;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ---------- 10. Boro image (Loan calculator er pic) ---------- */
+div.overflow-hidden.rounded-2xl > img {
+  transition: transform 500ms cubic-bezier(.2,.7,.2,1);
+}
+
+div.overflow-hidden.rounded-2xl > img:hover {
+  transform: scale(1.04);
+}
+
+/* ---------- 11. Review / Blog card ---------- */
+article.w-60:hover,
+article.rounded-2xl.bg-mint:hover {
+  box-shadow: 0 14px 30px rgba(10, 42, 37, 0.14);
+}
+
+#prev:hover,
+#next:hover {
+  color: #0fbb7d;
+}
+
+/* ---------- 12. Buttons ---------- */
+
+
+a.bg-ink:hover,
+button.bg-ink:hover,
+#calcBtn:hover {
+  background-color: #0fbb7d;
+  border-color: #0fbb7d;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(10, 42, 37, 0.12);
+}
+
+
+a.bg-brand:hover,
+button.bg-brand:hover {
+  background-color: #0c9e69;
+}
+
+.headerbtn a:hover:active,
+a.bg-brand:hover:active,
+button.bg-brand:hover:active,
+a.bg-ink:hover:active,
+button.bg-ink:hover:active,
+#calcBtn:hover:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* ---------- 13. Footer ---------- */
+footer li > a,
+footer p > a {
+  display: inline-block;
+}
+
+footer li > a:hover,
+footer p > a:hover {
+  color: #0fbb7d;
+}
+
+footer li > a:hover {
+  transform: translateX(4px);
+}
+
+footer li > span.bg-brand {
+  transition: transform 250ms ease;
+}
+
+footer li:hover > span.bg-brand {
+  transform: scale(1.12);
+}
+
+footer a.rounded-full.bg-white:hover {
+  transform: translateY(-3px);
+}
+
+footer a.rounded-md.bg-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- 14. FAQ ---------- */
+.faq-q > span {
+  transition: background-color 250ms ease, transform 300ms ease;
+}
+
+.faq-q:hover > span {
+  background-color: #0a2a25;
+  transform: rotate(90deg);
+}
+
+/* ---------- 15. Form ---------- */
+input:hover,
+select:hover,
+textarea:hover {
+  box-shadow: 0 0 0 3px rgba(15, 187, 125, 0.15);
+}
+
+#joinForm {
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+#joinForm:focus-within {
+  border-color: #0fbb7d;
+  box-shadow: 0 0 0 3px rgba(15, 187, 125, 0.15);
+}
+
+
+#bookMsg,
+#joinMsg {
+  animation: fadeUp 400ms ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ---------- 16. Car gallery thumbnail ---------- */
+.thumb {
+  transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.thumb:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(10, 42, 37, 0.18);
+}
+
+/* =========================================================
+   CARHUT - COMPLETE CUSTOM CSS
+   Responsive: 320px → 1920px
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   SMOOTH INTERACTION
+   ========================================================= */
+
+a,
+button,
+input,
+select,
+textarea {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #0fbb7d;
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   CARDS / FIGURES
+   ========================================================= */
+
+article,
+figure {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+article:hover,
+figure:hover {
+  transform: translateY(-3px);
+}
+
+article img,
+figure img {
+  transition: transform 420ms cubic-bezier(.2,.7,.2,1);
+}
+
+article:hover img,
+figure:hover img {
+  transform: scale(1.025);
+}
+
+
+/* =========================================================
+   GENERAL LINKS
+   ========================================================= */
+
+a:hover {
+  text-decoration-thickness: 1px;
+}
+
+
+/* =========================================================
+   LOGO
+   Logo has NO hover movement
+   ========================================================= */
+
+a.font-head,
+a.font-head:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+
+
+.headerbtn a {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.headerbtn a:hover {
+  background-color: #0fbb7d;
+  color: #ffffff;
+  transform: none;
+  box-shadow: none;
+}
+
+
+
+button:hover,
+button:focus-visible {
+  transform: none;
+  box-shadow: none;
+}
+
+a.bg-brand:hover,
+button.bg-brand:hover {
+  background-color: #0c9e69;
+  transform: none;
+  box-shadow: none;
+}
+
+a.bg-ink:hover,
+button.bg-ink:hover,
+#calcBtn:hover {
+  background-color: #0fbb7d;
+  border-color: #0fbb7d;
+  transform: none;
+  box-shadow: none;
+}
+
+a.border-white:hover {
+  transform: none;
+  background-color: rgba(255,255,255,.10);
+  border-color: rgba(255,255,255,.9);
+}
+
+
+/* =========================================================
+   ARROW ANIMATION
+   ========================================================= */
+
+.arrow-hover {
+  display: inline-block;
+
+  transition:
+    transform 220ms cubic-bezier(.2,.7,.2,1),
+    opacity 180ms ease;
+
+  transform-origin: center;
+  will-change: transform;
+}
+
+
+/* Pill arrow */
+
+a:hover > span > .arrow-hover,
+a:focus-visible > span > .arrow-hover,
+a:hover > .arrow-hover,
+a:focus-visible > .arrow-hover {
+  transform: translate(3px, -3px) rotate(45deg);
+}
+
+
+/* Right arrow */
+
+button:hover > .fa-chevron-right.arrow-hover,
+button:focus-visible > .fa-chevron-right.arrow-hover {
+  transform: translateX(4px);
+}
+
+
+/* Left arrow */
+
+button:hover > .fa-chevron-left.arrow-hover,
+button:focus-visible > .fa-chevron-left.arrow-hover {
+  transform: translateX(-4px);
+}
+
+
+/* Up arrow */
+
+button:hover > .fa-arrow-up.arrow-hover,
+button:focus-visible > .fa-arrow-up.arrow-hover {
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   VEHICLE CARDS
+   ========================================================= */
+
+article.relative.overflow-hidden:hover {
+  box-shadow:
+    0 18px 40px rgba(10, 42, 37, 0.14);
+}
+
+a.relative.block.overflow-hidden:hover {
+  box-shadow:
+    0 14px 34px rgba(10, 42, 37, 0.12);
+}
+
+a.relative.block.overflow-hidden:hover img {
+  transform: scale(1.045);
+}
+
+
+/* =========================================================
+   BRAND LOGOS
+   ========================================================= */
+
+ul img {
+  transition:
+    transform 220ms ease,
+    opacity 180ms ease;
+}
+
+ul li:hover > img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   FORM CONTROLS
+   ========================================================= */
+
+input,
+select,
+textarea {
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow:
+    0 0 0 3px rgba(15, 187, 125, .12);
+}
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+#navlinks {
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+#hamburger span {
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+@media (max-width: 1023px) {
+
+  #navlinks.flex {
+    animation: menuDrop 250ms ease;
+  }
+
+}
+
+@keyframes menuDrop {
+
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+
+}
+
+
+/* Hamburger X */
+
+#hamburger[aria-expanded="true"] span:nth-child(1) {
+  transform:
+    translateY(8px)
+    rotate(45deg);
+}
+
+#hamburger[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger[aria-expanded="true"] span:nth-child(3) {
+  transform:
+    translateY(-8px)
+    rotate(-45deg);
+}
+
+
+/* =========================================================
+   PAGE FADE
+   ========================================================= */
+
+body {
+  animation: pageFade 500ms ease;
+}
+
+@keyframes pageFade {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+
+/* =========================================================
+   REVEAL
+   ========================================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+
+  transition:
+    opacity 600ms ease,
+    transform 700ms cubic-bezier(.2,.7,.2,1);
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: none;
+}
+
+
+/* =========================================================
+   HERO STATS
+   ========================================================= */
+
+.divide-white\/20 > div {
+  transition:
+    background-color 250ms ease;
+}
+
+.divide-white\/20 > div b {
+  transition:
+    color 250ms ease;
+}
+
+.divide-white\/20 > div:hover {
+  background-color: rgba(255,255,255,.08);
+}
+
+.divide-white\/20 > div:hover b {
+  color: #0fbb7d;
+}
+
+
+/* =========================================================
+   PILL TABS
+   ========================================================= */
+
+[data-tabs] button.rounded-full[aria-selected="false"]:hover {
+  background-color: #e0f7f0;
+}
+
+
+/* =========================================================
+   SAVE CAR
+   ========================================================= */
+
+article button[aria-label="Save car"] {
+  transition:
+    background-color 200ms ease,
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+article button[aria-label="Save car"]:hover {
+  background-color: #0fbb7d;
+  color: #fff;
+  transform: scale(1.08);
+}
+
+article h3 a:hover {
+  color: #0fbb7d;
+}
+
+
+/* =========================================================
+   WHY CHOOSE US ICON
+   ========================================================= */
+
+div > i.text-3xl.text-brand {
+  display: inline-block;
+
+  transition:
+    transform 300ms cubic-bezier(.2,.7,.2,1);
+}
+
+div:hover > i.text-3xl.text-brand {
+  transform:
+    translateY(-4px)
+    scale(1.12);
+}
+
+
+/* =========================================================
+   BROWSE BY TYPE
+   ========================================================= */
+
+a.relative.block.overflow-hidden img {
+  transition:
+    transform 420ms cubic-bezier(.2,.7,.2,1);
+}
+
+a.relative.block.overflow-hidden > span {
+  transition:
+    background-color 250ms ease,
+    color 250ms ease;
+}
+
+a.relative.block.overflow-hidden:hover > span {
+  background-color: #0fbb7d;
+  color: #fff;
+}
+
+
+/* =========================================================
+   LARGE IMAGE
+   ========================================================= */
+
+div.overflow-hidden.rounded-2xl > img {
+  transition:
+    transform 500ms cubic-bezier(.2,.7,.2,1);
+}
+
+div.overflow-hidden.rounded-2xl > img:hover {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   REVIEW / BLOG
+   ========================================================= */
+
+article.w-60:hover,
+article.rounded-2xl.bg-mint:hover {
+  box-shadow:
+    0 14px 30px rgba(10,42,37,.14);
+}
+
+#prev:hover,
+#next:hover {
+  color: #0fbb7d;
+}
+
+
+/* =========================================================
+   ACTIVE BUTTON
+   ========================================================= */
+
+.headerbtn a:active,
+a.bg-brand:active,
+button.bg-brand:active,
+a.bg-ink:active,
+button.bg-ink:active,
+#calcBtn:active {
+  transform: none;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  width: 100%;
+  overflow: hidden;
+}
+
+footer > div {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Footer links */
+
+footer li > a,
+footer p > a {
+  display: inline-block;
+}
+
+footer li > a:hover,
+footer p > a:hover {
+  color: #0fbb7d;
+}
+
+
+/* Footer links color only.
+   No movement. */
+
+footer li > a:hover {
+  transform: none;
+}
+
+
+/* Footer icon */
+
+footer li > span.bg-brand {
+  transition:
+    transform 250ms ease;
+}
+
+footer li:hover > span.bg-brand {
+  transform: scale(1.08);
+}
+
+
+/* Social icons */
+
+footer a.rounded-full.bg-white:hover {
+  background-color: #0fbb7d;
+  color: #fff;
+  transform: none;
+}
+
+
+/* App buttons */
+
+footer a.rounded-md.bg-white:hover {
+  transform: none;
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.25);
+}
+
+
+/* =========================================================
+   JOIN CARHUT
+   ========================================================= */
+
+#joinForm {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  max-width: 560px;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  border: 1px solid rgba(10,42,37,.30);
+
+  background: #fff;
+
+  padding: 4px;
+
+  box-shadow: none;
+
+  transition:
+    border-color 200ms ease;
+}
+
+#joinForm input {
+  min-width: 0;
+  width: 100%;
+
+  flex: 1 1 auto;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  padding:
+    10px 14px;
+
+  box-shadow: none !important;
+}
+
+#joinForm input:hover,
+#joinForm input:focus {
+  box-shadow: none !important;
+}
+
+#joinForm:focus-within {
+  border-color: #0fbb7d;
+  box-shadow: none;
+}
+
+#joinForm button {
+  flex: 0 0 auto;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  border-radius: 999px;
+
+  padding:
+    10px 20px;
+
+  transform: none !important;
+
+  box-shadow: none !important;
+}
+
+#joinForm button:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+
+/* =========================================================
+   JOIN MESSAGE
+   ========================================================= */
+
+#bookMsg,
+#joinMsg {
+  animation: fadeUp 400ms ease;
+}
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.faq-q > span {
+  transition:
+    background-color 250ms ease,
+    transform 300ms ease;
+}
+
+.faq-q:hover > span {
+  background-color: #0a2a25;
+  transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   CAR GALLERY
+   ========================================================= */
+
+.thumb {
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease;
+}
+
+.thumb:hover {
+  transform:
+    translateY(-3px)
+    scale(1.05);
+
+  box-shadow:
+    0 8px 18px rgba(10,42,37,.18);
+}
+
+
+/* =========================================================
+   TEAM SECTION
+   Keep original image size
+   ========================================================= */
+
+section:has(img[alt="Courtney Henry"]) h2 {
+  text-align: center;
+}
+
+section:has(img[alt="Courtney Henry"]) > div > div:nth-of-type(1) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section:has(img[alt="Courtney Henry"]) > div > div:nth-of-type(2) {
+  width: 100%;
+  text-align: center;
+}
+
+section:has(img[alt="Courtney Henry"]) figure img {
+  transform: none !important;
+}
+
+section:has(img[alt="Courtney Henry"]) figure:hover img {
+  transform: none !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+
+/* =========================================================
+   1023px AND BELOW
+   ========================================================= */
+
+@media (max-width: 1023px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   768px - 1023px
+   IMPORTANT:
+   FOOTER STAYS 4 COLUMNS
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* Footer top */
+
+  footer > div > div:first-child {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 24px;
+  }
+
+  footer > div > div:first-child > a {
+    flex-shrink: 0;
+  }
+
+  footer > div > div:first-child > ul {
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+
+    width: 100%;
+    max-width: 680px;
+  }
+
+
+  /* Footer main */
+
+  footer > div > div:nth-child(2) {
+
+    display: grid !important;
+
+    grid-template-columns:
+      1.55fr
+      1fr
+      1fr
+      1.15fr !important;
+
+    gap: 24px;
+
+    width: 100%;
+  }
+
+  footer > div > div:nth-child(2) > div {
+    min-width: 0;
+  }
+
+
+  /* Description */
+
+  footer > div > div:nth-child(2) > div:first-child p {
+    max-width: 230px;
+  }
+
+
+  /* App */
+
+  footer > div > div:nth-child(2) > div:last-child {
+    width: 100%;
+    max-width: 205px;
+  }
+
+
+  /* Footer bottom */
+
+  footer > div > div:last-child {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE 767px
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  html,
+  body {
+    width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+
+  /* -------------------------------------------------------
+     HEADER
+     ------------------------------------------------------- */
+
+  header {
+    width: 100%;
+  }
+
+
+  /* -------------------------------------------------------
+     HERO
+     ------------------------------------------------------- */
+
+  main > section:first-child {
+    width: 100%;
+  }
+
+
+  /* -------------------------------------------------------
+     TEAM
+     ------------------------------------------------------- */
+
+  section:has(img[alt="Courtney Henry"]) > div {
+    width: 100%;
+  }
+
+  section:has(img[alt="Courtney Henry"]) > div > div:nth-of-type(1) {
+    width: 100%;
+    max-width: 748px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section:has(img[alt="Courtney Henry"]) .grid {
+    width: 100%;
+  }
+
+
+  /* -------------------------------------------------------
+     JOIN CARHUT
+     ------------------------------------------------------- */
+
+  #joinForm {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 4px;
+  }
+
+  #joinForm input {
+    min-width: 0;
+
+    padding:
+      9px 12px;
+
+    font-size: 13px;
+  }
+
+  #joinForm button {
+    padding:
+      9px 16px;
+
+    font-size: 12px;
+  }
+
+
+  /* =======================================================
+     FOOTER TOP
+     ======================================================= */
+
+  footer > div {
+    width: 100%;
+    max-width: 100%;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  footer > div > div:first-child {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 24px;
+  }
+
+
+  footer > div > div:first-child > ul {
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    width: 100%;
+
+    gap: 18px;
+  }
+
+
+  footer > div > div:first-child > ul > li {
+    min-width: 0;
+  }
+
+
+  /* =======================================================
+     FOOTER MAIN
+     2 COLUMNS ON MOBILE TABLET
+     ======================================================= */
+
+  footer > div > div:nth-child(2) {
+
+    display: grid !important;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 30px;
+
+    width: 100%;
+  }
+
+  footer > div > div:nth-child(2) > div {
+    min-width: 0;
+    width: 100%;
+  }
+
+
+  /* Description */
+
+  footer > div > div:nth-child(2) > div:first-child p {
+    max-width: 270px;
+  }
+
+
+  /* App */
+
+  footer > div > div:nth-child(2) > div:last-child {
+    width: fit-content;
+    max-width: 100%;
+  }
+
+
+  /* =======================================================
+     FOOTER BOTTOM
+     ======================================================= */
+
+  footer > div > div:last-child {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 16px;
+  }
+
+}
+
+
+/* =========================================================
+   480px AND BELOW
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  footer > div {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+
+  /* Footer top */
+
+  footer > div > div:first-child {
+    gap: 22px;
+  }
+
+  footer > div > div:first-child > ul {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 16px;
+  }
+
+
+  /* Footer main */
+
+  footer > div > div:nth-child(2) {
+
+    grid-template-columns:
+      1fr !important;
+
+    gap: 28px;
+  }
+
+
+  /* Description */
+
+  footer > div > div:nth-child(2) > div:first-child p {
+    max-width: 280px;
+  }
+
+
+  /* App */
+
+  footer > div > div:nth-child(2) > div:last-child {
+    width: fit-content;
+  }
+
+
+  /* Bottom */
+
+  footer > div > div:last-child {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 14px;
+  }
+
+  footer > div > div:last-child > p {
+    width: 100%;
+  }
+
+  footer > div > div:last-child > button {
+    align-self: flex-end;
+  }
+
+}
+
+
+/* =========================================================
+   375px AND BELOW
+   ========================================================= */
+
+@media (max-width: 375px) {
+
+  footer > div {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+
+  #joinForm {
+    padding: 3px;
+  }
+
+  #joinForm input {
+    padding:
+      8px 10px;
+
+    font-size: 12px;
+  }
+
+  #joinForm input::placeholder {
+    font-size: 12px;
+  }
+
+  #joinForm button {
+    padding:
+      8px 13px;
+
+    font-size: 11px;
+  }
+
+
+  footer > div > div:first-child {
+    gap: 20px;
+  }
+
+
+  footer > div > div:nth-child(2) {
+    gap: 24px;
+  }
+
+}
+
+
+/* =========================================================
+   EXACT 320px
+   ========================================================= */
+
+@media (max-width: 320px) {
+
+  html,
+  body {
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+  }
+
+
+  footer > div {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+
+  /* -------------------------------------------------------
+     JOIN FORM
+     ------------------------------------------------------- */
+
+  #joinForm {
+
+    width: 100%;
+    max-width: 100%;
+
+    min-width: 0;
+
+    padding: 3px;
+  }
+
+  #joinForm input {
+
+    width: 0;
+    min-width: 0;
+
+    flex: 1 1 auto;
+
+    padding:
+      8px 9px;
+
+    font-size: 11px;
+  }
+
+  #joinForm input::placeholder {
+    font-size: 11px;
+  }
+
+  #joinForm button {
+
+    flex: 0 0 auto;
+
+    padding:
+      8px 11px;
+
+    font-size: 10px;
+  }
+
+
+  /* -------------------------------------------------------
+     FOOTER
+     ------------------------------------------------------- */
+
+  footer > div > div:first-child {
+
+    gap: 20px;
+
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+
+  footer > div > div:first-child > ul {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 14px;
+  }
+
+
+  footer > div > div:nth-child(2) {
+
+    grid-template-columns:
+      1fr !important;
+
+    gap: 24px;
+
+    padding-bottom: 28px;
+  }
+
+
+  footer > div > div:nth-child(2) > div:first-child p {
+    max-width: 270px;
+  }
+
+
+  footer > div > div:nth-child(2) > div:last-child {
+    width: fit-content;
+    max-width: 100%;
+  }
+
+
+  footer > div > div:last-child {
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    gap: 12px;
+  }
+
+
+  footer > div > div:last-child > p {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+
+  footer > div > div:last-child > button {
+
+    width: 38px;
+    height: 38px;
+
+    align-self: flex-end;
+  }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   ========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+  article:hover,
+  figure:hover {
+    transform: none;
+  }
+
+  article:hover img,
+  figure:hover img {
+    transform: none;
+  }
+
+  footer li > a:hover {
+    transform: none;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  article:hover,
+  figure:hover,
+  a:hover,
+  button:hover {
+    transform: none !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  body {
+    animation: none;
+  }
+
+}

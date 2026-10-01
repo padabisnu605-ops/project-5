@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarHut | Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: { extend: {
+          colors: { brand: '#0fbb7d', ink: '#0a2a25', mint: '#e0f7f0' },
+          fontFamily: { head: ['Outfit', 'sans-serif'], body: ['"DM Sans"', 'sans-serif'] },
+        } },
+      };
+    </script>
+      <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body class="bg-[#fafafa] font-body text-ink">
+    <header class="absolute inset-x-0 top-0 z-20 border-b border-white/20 text-white">
+      <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+        <nav class="relative flex items-center py-4">
+          <div class="brand">
+            <a href="index.html" class="flex items-center gap-2 font-head text-xl font-medium"><i class="fa-solid fa-car-side"></i>CarHut</a>
+          </div>
+          <div class="ml-auto flex h-9 w-9 cursor-pointer flex-col justify-center gap-1.5 lg:hidden" id="hamburger" role="button" aria-label="Menu" aria-expanded="false">
+            <span class="h-0.5 w-full bg-white"></span>
+            <span class="h-0.5 w-full bg-white"></span>
+            <span class="h-0.5 w-full bg-white"></span>
+          </div>
+          <div class="navbar-links lg:mx-auto">
+            <ul class="absolute inset-x-0 top-full z-30 mt-2 hidden flex-col gap-1 rounded-2xl bg-ink/95 p-3 lg:static lg:mt-0 lg:flex lg:flex-row lg:gap-0 lg:rounded-full lg:border lg:border-white/40 lg:bg-transparent lg:p-1" id="navlinks"><li><a href="index.html" class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15">Home</a></li><li><a href="aboutus.html" class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15">About Us</a></li><li><a href="vehicles.html" class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15">Vehicles</a></li><li><a href="cardetails.html" class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15">Car Details</a></li><li><a href="contact.html" class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15" aria-current="page">Contact Us</a></li><li class="lg:hidden"><a href="#" class="block rounded-full bg-white px-4 py-2 text-center text-sm font-medium text-ink">Create Account</a></li></ul>
+          </div>
+          <div class="headerbtn hidden lg:block">
+            <a href="#" class="rounded-full bg-white px-6 py-3 text-sm font-medium text-ink">Create Account</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="relative overflow-hidden bg-black text-white">
+  <div class="absolute inset-0">
+    <img
+      src="images/01. -Contact-Hero Section.png"
+      alt="Contact Us Hero"
+      class="h-full w-full object-cover object-bottom"
+    />
+  </div>
+
+  <div class="absolute inset-0 bg-gradient-to-b from-black/85 via-black/30 to-black/10"></div>
+
+  <div class="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[520px]">
+    <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10 pt-28 sm:pt-36">
+      <h1 class="font-head text-3xl font-light sm:text-5xl">Contact Us</h1>
+      <p class="mt-2 text-xl sm:text-3xl">Home / Contact Us</p>
+    </div>
+  </div>
+</section>
+      <section class="py-14 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+<div class="grid gap-6 lg:grid-cols-[330px_1fr]">
+            <form id="bookForm" class="grid content-start gap-3 rounded-2xl bg-mint p-6">
+              <h2 class="mb-2 text-center font-head text-2xl font-medium">Book your car</h2><select class="w-full rounded-md bg-brand px-3 py-2 text-xs text-white"><option>Car type</option><option>Option 1</option><option>Option 2</option></select><select class="w-full rounded-md bg-brand px-3 py-2 text-xs text-white"><option>Place of rental</option><option>Option 1</option><option>Option 2</option></select><select class="w-full rounded-md bg-brand px-3 py-2 text-xs text-white"><option>Place of return</option><option>Option 1</option><option>Option 2</option></select><input type="text" placeholder="Rental date" onfocus="this.type='date'" class="w-full rounded-md bg-brand px-3 py-2 text-xs text-white placeholder:text-white" /><input type="text" placeholder="Return date" onfocus="this.type='date'" class="w-full rounded-md bg-brand px-3 py-2 text-xs text-white placeholder:text-white" />
+              <button class="mx-auto mt-3 rounded-full bg-brand px-10 py-2.5 text-xs font-medium text-white">Book Now</button>
+              <p id="bookMsg" class="hidden text-center text-xs text-brand">Thanks! We will confirm your booking shortly.</p>
+            </form>
+            <img src="images/Img (26).png" alt="White sports car" class="h-64 w-full rounded-2xl object-cover sm:h-80 lg:h-full" />
+          </div>
+        </div>
+      </section>
+      <section class="py-6">
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+<ul class="grid gap-4 rounded-3xl bg-mint p-5 sm:grid-cols-2 lg:grid-cols-4 lg:rounded-full lg:px-8"><li class="flex items-center gap-3"><span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-10 w-10"><i class="fa-solid fa-location-dot"></i></span><p class="text-xs">Address<b class="block text-sm">Oxford Ave. Cary, NC 27511</b></p></li><li class="flex items-center gap-3"><span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-10 w-10"><i class="fa-solid fa-envelope"></i></span><p class="text-xs">Email<b class="block text-sm">nwiger@yahoo.com</b></p></li><li class="flex items-center gap-3"><span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-10 w-10"><i class="fa-solid fa-phone"></i></span><p class="text-xs">Phone<b class="block text-sm">+537 547-6401</b></p></li><li class="flex items-center gap-3"><span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-10 w-10"><i class="fa-solid fa-clock"></i></span><p class="text-xs">Opening hours<b class="block text-sm">Sun-Mon: 10am - 10pm</b></p></li></ul>
+        </div>
+      </section>
+      <section class="py-14 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+<h2 class="font-head text-2xl font-medium sm:text-3xl">Why Choose Us?</h2><div class="mt-8 grid items-center gap-8 lg:grid-cols-[1fr_220px_1fr]"><div class="grid gap-8"><div><i class="fa-solid fa-tags text-3xl text-brand"></i><h3 class="mt-3 font-medium">Special Financing Offers</h3><p class="mt-2 max-w-xs text-xs text-ink/70">Our stress-free finance department that can financial solutions to save you money.</p></div><div><i class="fa-solid fa-gem text-3xl text-brand"></i><h3 class="mt-3 font-medium">Trusted Car Dealership</h3><p class="mt-2 max-w-xs text-xs text-ink/70">Our stress-free finance department that can financial solutions to save you money.</p></div></div><img src="images/black-isolated-car 1 (1).png" alt="Black SUV" loading="lazy" class="mx-auto w-48 mix-blend-multiply lg:w-full" /><div class="grid gap-8"><div><i class="fa-solid fa-file-invoice-dollar text-3xl text-brand"></i><h3 class="mt-3 font-medium">Transparent Pricing</h3><p class="mt-2 max-w-xs text-xs text-ink/70">Our stress-free finance department that can financial solutions to save you money.</p></div><div><i class="fa-solid fa-screwdriver-wrench text-3xl text-brand"></i><h3 class="mt-3 font-medium">Expert Car Service</h3><p class="mt-2 max-w-xs text-xs text-ink/70">Our stress-free finance department that can financial solutions to save you money.</p></div></div></div>
+        </div>
+      </section>
+      <section class="py-14 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+<h2 class="font-head text-2xl font-medium sm:text-3xl">Our Team</h2><div class="mt-6 grid gap-5 sm:grid-cols-3"><figure><img src="images/team1.jpg (1).png" alt="Courtney Henry" loading="lazy" class="h-64 w-full rounded-2xl object-cover object-top sm:h-52 lg:h-80" /><figcaption class="mt-2 text-sm">Courtney Henry<span class="block text-[10px] text-ink/70">Development Manager</span></figcaption></figure><figure><img src="images/team2.jpg (4).png" alt="Jerome Bell" loading="lazy" class="h-64 w-full rounded-2xl object-cover object-top sm:h-52 lg:h-80" /><figcaption class="mt-2 text-sm">Jerome Bell<span class="block text-[10px] text-ink/70">Software Tester</span></figcaption></figure><figure><img src="images/team2.jpg (3).png" alt="Jerome Bell" loading="lazy" class="h-64 w-full rounded-2xl object-cover object-top sm:h-52 lg:h-80" /><figcaption class="mt-2 text-sm">Jerome Bell<span class="block text-[10px] text-ink/70">Software Tester</span></figcaption></figure></div><div class="mt-8 text-center"><a href="#" class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm">View All<span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white"><i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i></span></a></div>
+        </div>
+      </section>
+      <section class="py-14 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+<h2 class="font-head text-2xl font-medium sm:text-3xl">Latest Blog Posts</h2><div class="mt-6 grid gap-5 sm:grid-cols-3"><article class="rounded-2xl bg-mint p-3 shadow-md"><div class="relative"><img src="images/img (27).png" alt="Blog post 1" loading="lazy" class="h-44 w-full rounded-xl object-cover" /><span class="absolute left-3 top-3 rounded-full bg-white px-3 py-0.5 text-[10px]">Exterior</span></div><p class="mt-4 text-[11px] text-ink/70">Admin <span class="ml-3">November 22, 2023</span></p><h3 class="mt-1 text-sm font-medium">BMW X5 Gold 2024 Sport Review: Light on Sport</h3></article><article class="rounded-2xl bg-mint p-3 shadow-md"><div class="relative"><img src="images/img (28).png" alt="Blog post 2" loading="lazy" class="h-44 w-full rounded-xl object-cover" /><span class="absolute left-3 top-3 rounded-full bg-white px-3 py-0.5 text-[10px]">Exterior</span></div><p class="mt-4 text-[11px] text-ink/70">Admin <span class="ml-3">November 22, 2023</span></p><h3 class="mt-1 text-sm font-medium">BMW X5 Gold 2024 Sport Review: Light on Sport</h3></article><article class="rounded-2xl bg-mint p-3 shadow-md"><div class="relative"><img src="images/img (29).png" alt="Blog post 3" loading="lazy" class="h-44 w-full rounded-xl object-cover" /><span class="absolute left-3 top-3 rounded-full bg-white px-3 py-0.5 text-[10px]">Exterior</span></div><p class="mt-4 text-[11px] text-ink/70">Admin <span class="ml-3">November 22, 2023</span></p><h3 class="mt-1 text-sm font-medium">BMW X5 Gold 2024 Sport Review: Light on Sport</h3></article></div><div class="mt-8 text-center"><a href="#" class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm">View All<span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white"><i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i></span></a></div>
+        </div>
+      </section>
+      <section class="py-14 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+<div class="flex flex-wrap items-center justify-between gap-4"><h2 class="font-head text-2xl font-medium sm:text-3xl">Explore Our Premium Brands</h2><a href="vehicles.html" class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm">Show All Brands<span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white"><i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i></span></a></div><ul class="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6"><li class="text-center"><img src="images/b1.jpg (1).png" alt="Audi logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">Audi</p></li><li class="text-center"><img src="images/b2.jpg (1).png" alt="BMW logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">BMW</p></li><li class="text-center"><img src="images/b3.jpg (1).png" alt="Ford logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">Ford</p></li><li class="text-center"><img src="images/b4.jpg (1).png" alt="Mercedes Benz logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">Mercedes Benz</p></li><li class="text-center"><img src="images/b5.jpg (1).png" alt="Peugeot logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">Peugeot</p></li><li class="text-center"><img src="images/b6.jpg (1).png" alt="Volkswagen logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">Volkswagen</p></li></ul>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#06211d] text-white">
+      <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+        <div class="flex flex-wrap items-center justify-between gap-6 py-10">
+          <a href="index.html" class="flex items-center gap-2 font-head text-xl font-medium"><i class="fa-solid fa-car-side"></i>CarHut</a>
+          <ul class="grid gap-5 sm:grid-cols-3 sm:gap-10"><li class="flex items-center gap-3"><span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-8 w-8"><i class="fa-solid fa-location-dot text-sm"></i></span><p class="text-[10px] text-white/70">Address<b class="block text-xs text-white">Oxford Ave. Cary, NC 27511</b></p></li><li class="flex items-center gap-3"><span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-8 w-8"><i class="fa-solid fa-envelope text-sm"></i></span><p class="text-[10px] text-white/70">Email<b class="block text-xs text-white">nwiger@yahoo.com</b></p></li><li class="flex items-center gap-3"><span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-8 w-8"><i class="fa-solid fa-phone text-sm"></i></span><p class="text-[10px] text-white/70">Phone<b class="block text-xs text-white">+537 547-6401</b></p></li></ul>
+        </div>
+        <div class="grid gap-8 pb-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1.3fr]">
+          <div><p class="max-w-[14rem] text-sm">Lorem ipsum dolor sit amet consectetur. Nec magna non egestas in. Enim habitant id nec maecenas.</p><div class="mt-5 flex gap-3"><a href="#" class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink" aria-label="Google"><i class="fa-brands fa-google-plus-g text-[10px]"></i></a><a href="#" class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-[10px]"></i></a><a href="#" class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in text-[10px]"></i></a><a href="#" class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink" aria-label="YouTube"><i class="fa-brands fa-youtube text-[10px]"></i></a></div></div>
+          <div><h3 class="font-head text-lg">Vehicles</h3><ul class="mt-3 space-y-2 text-xs text-white/80"><li><a href="aboutus.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Gallery</a></li><li><a href="#">Blog</a></li><li><a href="#">F.A.Q</a></li></ul></div><div><h3 class="font-head text-lg">Vehicles</h3><ul class="mt-3 space-y-2 text-xs text-white/80"><li><a href="aboutus.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Gallery</a></li><li><a href="#">Blog</a></li><li><a href="#">F.A.Q</a></li></ul></div>
+          <div class="w-fit self-start rounded-md border border-white/60 p-2"><h3 class="mb-2 text-sm font-medium">Download App</h3><div class="grid gap-2"><a href="#" class="flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-ink"><i class="fa-brands fa-apple text-xl"></i><span class="text-[9px] leading-tight">Download on the<b class="block text-sm">App Store</b></span></a><a href="#" class="flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-ink"><i class="fa-brands fa-google-play text-lg"></i><span class="text-[9px] leading-tight">GET IT ON<b class="block text-sm">Google Play</b></span></a></div></div>
+        </div>
+        <div class="flex flex-wrap items-center justify-between gap-4 border-t border-white/20 py-4 text-[11px]">
+          <p>© 2025 exemple.com. All rights reserved.</p>
+          <p><a href="#">Terms &amp; Conditions</a> <span class="mx-3">•</span> <a href="#">Privacy Notice</a></p>
+          <button id="toTop" class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-10 w-10 rounded-lg" aria-label="Back to top"><i class="fa-solid fa-arrow-up arrow-hover"></i></button>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarHut | Car Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: { extend: {
+          colors: { brand: '#0fbb7d', ink: '#0a2a25', mint: '#e0f7f0' },
+          fontFamily: { head: ['Outfit', 'sans-serif'], body: ['"DM Sans"', 'sans-serif'] },
+        } },
+      };
+    </script>
+      <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body class="bg-[#fafafa] font-body text-ink">
+    <header class="absolute inset-x-0 top-0 z-20 border-b border-white/20 text-white">
+      <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+        <nav class="relative flex items-center py-4">
+          <div class="brand">
+            <a href="index.html" class="flex items-center gap-2 font-head text-xl font-medium"><i class="fa-solid fa-car-side"></i>CarHut</a>
+          </div>
+          <div class="ml-auto flex h-9 w-9 cursor-pointer flex-col justify-center gap-1.5 lg:hidden" id="hamburger" role="button" aria-label="Menu" aria-expanded="false">
+            <span class="h-0.5 w-full bg-white"></span>
+            <span class="h-0.5 w-full bg-white"></span>
+            <span class="h-0.5 w-full bg-white"></span>
+          </div>
+          <div class="navbar-links lg:mx-auto">
+            <ul class="absolute inset-x-0 top-full z-30 mt-2 hidden flex-col gap-1 rounded-2xl bg-ink/95 p-3 lg:static lg:mt-0 lg:flex lg:flex-row lg:gap-0 lg:rounded-full lg:border lg:border-white/40 lg:bg-transparent lg:p-1" id="navlinks"><li><a href="index.html" class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15">Home</a></li><li><a href="aboutus.html" class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15">About Us</a></li><li><a href="vehicles.html" class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15">Vehicles</a></li><li><a href="cardetails.html" class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15" aria-current="page">Car Details</a></li><li><a href="contact.html" class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15">Contact Us</a></li><li class="lg:hidden"><a href="#" class="block rounded-full bg-white px-4 py-2 text-center text-sm font-medium text-ink">Create Account</a></li></ul>
+          </div>
+          <div class="headerbtn hidden lg:block">
+            <a href="#" class="rounded-full bg-white px-6 py-3 text-sm font-medium text-ink">Create Account</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="relative overflow-hidden bg-black text-white">
+
+  <!-- Normal Image -->
+  <div class="absolute inset-0">
+    <img
+      src="images/01. -car-d-Hero Section.png"
+      alt="Details Hero"
+      class="h-full w-full object-cover object-bottom"
+    />
+  </div>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/85 via-black/30 to-black/10"></div>
+
+  <!-- Content -->
+  <div class="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[520px]">
+    <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10 pt-28 sm:pt-36">
+      
+      <h1 class="font-head text-3xl font-light sm:text-5xl">
+        Home / Details
+      </h1>
+
+    </div>
+  </div>
+
+</section>
+      <section class="py-14 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+<div class="grid gap-10 lg:grid-cols-2">
+            <div>
+              <div class="flex flex-wrap items-end gap-x-4 gap-y-2"><div><h2 class="font-head text-5xl font-semibold">BMW</h2><p class="text-2xl font-semibold text-[#5b3df5]">$25 <span class="text-xs font-normal">/ day</span></p></div><a href="contact.html" class="rounded-lg bg-ink px-5 py-3 text-xs text-white">Rent A Car</a></div>
+              <img id="mainPic" src="images/Img (17).png" alt="BMW" class="mt-6 aspect-[4/3] w-full rounded-2xl object-cover" />
+              <div class="mt-3 flex gap-3"><img src="images/Img (18).png" alt="BMW view 1" class="thumb h-14 w-20 cursor-pointer rounded-lg object-cover sm:h-16 sm:w-[5.5rem]" /><img src="images/Img (19).png" alt="BMW view 2" class="thumb h-14 w-20 cursor-pointer rounded-lg object-cover sm:h-16 sm:w-[5.5rem]" /><img src="images/Img (20).png" alt="BMW view 3" class="thumb h-14 w-20 cursor-pointer rounded-lg object-cover sm:h-16 sm:w-[5.5rem]" /></div>
+            </div>    
+            <div>
+              <h2 class="font-head text-2xl font-medium sm:text-3xl">Technical Specification</h2>
+              <ul class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3"><li class="rounded-xl bg-[#ececec] p-3 shadow-md"><i class="fa-solid fa-gear"></i><h3 class="mt-2 text-xs font-medium">Gear Box</h3><p class="text-xs text-ink/50">Automat</p></li><li class="rounded-xl bg-[#ececec] p-3 shadow-md"><i class="fa-solid fa-gas-pump"></i><h3 class="mt-2 text-xs font-medium">Fuel</h3><p class="text-xs text-ink/50">Petrol</p></li><li class="rounded-xl bg-[#ececec] p-3 shadow-md"><i class="fa-solid fa-door-closed"></i><h3 class="mt-2 text-xs font-medium">Doors</h3><p class="text-xs text-ink/50">2</p></li><li class="rounded-xl bg-[#ececec] p-3 shadow-md"><i class="fa-solid fa-snowflake"></i><h3 class="mt-2 text-xs font-medium">Air Conditioner</h3><p class="text-xs text-ink/50">Yes</p></li><li class="rounded-xl bg-[#ececec] p-3 shadow-md"><i class="fa-solid fa-chair"></i><h3 class="mt-2 text-xs font-medium">Seats</h3><p class="text-xs text-ink/50">5</p></li><li class="rounded-xl bg-[#ececec] p-3 shadow-md"><i class="fa-solid fa-road"></i><h3 class="mt-2 text-xs font-medium">Distance</h3><p class="text-xs text-ink/50">500</p></li></ul>
+              <h3 class="mt-8 text-sm font-medium">Car Equipment</h3>
+              <ul class="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 text-xs"><li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-ink"></i>ABS</li><li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-ink"></i>ABS</li><li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-ink"></i>Air Bags</li><li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-ink"></i>Air Bags</li><li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-ink"></i>Cruise Control</li><li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-ink"></i>Air Conditioner</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-14 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+<h2 class="font-head text-2xl font-medium sm:text-3xl">Browse by Type</h2><div class="mt-6 grid gap-4 sm:grid-cols-2"><a href="vehicles.html" class="relative block overflow-hidden rounded-2xl "><img src="images/img (21).png" alt="SUV" loading="lazy" class="h-40 w-full object-cover sm:h-52" /><span class="absolute bottom-3 left-3 rounded-full bg-white px-4 py-1.5 text-xs"><i class="fa-solid fa-car-side mr-2"></i>SUV</span></a><a href="vehicles.html" class="relative block overflow-hidden rounded-2xl "><img src="images/img (22).png" alt="Sedan" loading="lazy" class="h-40 w-full object-cover sm:h-52" /><span class="absolute bottom-3 left-3 rounded-full bg-white px-4 py-1.5 text-xs"><i class="fa-solid fa-car-side mr-2"></i>Sedan</span></a></div><div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3"><a href="vehicles.html" class="relative block overflow-hidden rounded-2xl "><img src="images/img (23).png" alt="Hatchback" loading="lazy" class="h-40 w-full object-cover sm:h-52" /><span class="absolute bottom-3 left-3 rounded-full bg-white px-4 py-1.5 text-xs"><i class="fa-solid fa-car-side mr-2"></i>Hatchback</span></a><a href="vehicles.html" class="relative block overflow-hidden rounded-2xl "><img src="images/img (24).png" alt="Hybrid" loading="lazy" class="h-40 w-full object-cover sm:h-52" /><span class="absolute bottom-3 left-3 rounded-full bg-white px-4 py-1.5 text-xs"><i class="fa-solid fa-car-side mr-2"></i>Hybrid</span></a><a href="vehicles.html" class="relative block overflow-hidden rounded-2xl col-span-2 sm:col-span-1"><img src="images/img (25).png" alt="Coupe" loading="lazy" class="h-40 w-full object-cover sm:h-52" /><span class="absolute bottom-3 left-3 rounded-full bg-white px-4 py-1.5 text-xs"><i class="fa-solid fa-car-side mr-2"></i>Coupe</span></a></div><div class="mt-8 text-center"><a href="vehicles.html" class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm">View All<span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white"><i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i></span></a></div>
+        </div>
+      </section>
+      <section class="py-14 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+<h2 class="font-head text-2xl font-medium sm:text-3xl">Shop Box Car Your Way</h2><div data-tabs class="flex flex-wrap gap-5 mt-6"><button class="border-b-2 border-transparent pb-1 text-sm aria-selected:border-brand aria-selected:font-medium" aria-selected="true">New Cars For Sale</button><button class="border-b-2 border-transparent pb-1 text-sm aria-selected:border-brand aria-selected:font-medium" aria-selected="false">Used Cars For Sale</button><button class="border-b-2 border-transparent pb-1 text-sm aria-selected:border-brand aria-selected:font-medium" aria-selected="false">Browse By Type</button><button class="border-b-2 border-transparent pb-1 text-sm aria-selected:border-brand aria-selected:font-medium" aria-selected="false">Browse By Brand</button></div><div class="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5"><ul class="space-y-4 text-xs"><li><a href="vehicles.html">Ford Cars</a></li><li><a href="vehicles.html">Honda Cars</a></li><li><a href="vehicles.html">Hyundai Cars</a></li><li><a href="vehicles.html">Infiniti Cars</a></li><li><a href="vehicles.html">Jaguar Cars</a></li><li><a href="vehicles.html">Jeep Cars</a></li></ul><ul class="space-y-4 text-xs"><li><a href="vehicles.html">Chrysler Cars</a></li><li><a href="vehicles.html">Citroen Cars</a></li><li><a href="vehicles.html">Cupra Cars</a></li><li><a href="vehicles.html">Dacia Cars</a></li><li><a href="vehicles.html">DS Cars</a></li><li><a href="vehicles.html">Fiat Cars</a></li></ul><ul class="space-y-4 text-xs"><li><a href="vehicles.html">Land Rover Cars</a></li><li><a href="vehicles.html">Lexus Cars</a></li><li><a href="vehicles.html">Mercedes-Benz Cars</a></li><li><a href="vehicles.html">Mazda Cars</a></li><li><a href="vehicles.html">MG Cars</a></li><li><a href="vehicles.html">Kia Cars</a></li></ul><ul class="space-y-4 text-xs"><li><a href="vehicles.html">Abarth Cars</a></li><li><a href="vehicles.html">Romeo Cars</a></li><li><a href="vehicles.html">Audi Cars</a></li><li><a href="vehicles.html">Bentley Cars</a></li><li><a href="vehicles.html">BMW Cars</a></li><li><a href="vehicles.html">Chevrolet Cars</a></li></ul><ul class="space-y-4 text-xs"><li><a href="vehicles.html">Mini Cars</a></li><li><a href="vehicles.html">Mitsubishi Cars</a></li><li><a href="vehicles.html">Nissan Cars</a></li><li><a href="vehicles.html">Peugeot Cars</a></li><li><a href="vehicles.html">Porsche Cars</a></li><li><a href="vehicles.html">Renault Cars</a></li></ul></div><div class="mt-8 text-center"><a href="vehicles.html" class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm">View All<span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white"><i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i></span></a></div>
+        </div>
+      </section>
+      <section class="py-14 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+<div class="flex flex-wrap items-center justify-between gap-4"><h2 class="font-head text-2xl font-medium sm:text-3xl">Explore Our Premium Brands</h2><a href="vehicles.html" class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm">Show All Brands<span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white"><i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i></span></a></div><ul class="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6"><li class="text-center"><img src="images/b1.jpg (1).png" alt="Audi logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">Audi</p></li><li class="text-center"><img src="images/b2.jpg (1).png" alt="BMW logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">BMW</p></li><li class="text-center"><img src="images/b3.jpg (1).png" alt="Ford logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">Ford</p></li><li class="text-center"><img src="images/b4.jpg (1).png" alt="Mercedes Benz logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">Mercedes Benz</p></li><li class="text-center"><img src="images/b5.jpg (1).png" alt="Peugeot logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">Peugeot</p></li><li class="text-center"><img src="images/b6.jpg (1).png" alt="Volkswagen logo" loading="lazy" class="mx-auto h-14 object-contain" /><p class="mt-2 text-sm">Volkswagen</p></li></ul>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#06211d] text-white">
+      <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+        <div class="flex flex-wrap items-center justify-between gap-6 py-10">
+          <a href="index.html" class="flex items-center gap-2 font-head text-xl font-medium"><i class="fa-solid fa-car-side"></i>CarHut</a>
+          <ul class="grid gap-5 sm:grid-cols-3 sm:gap-10"><li class="flex items-center gap-3"><span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-8 w-8"><i class="fa-solid fa-location-dot text-sm"></i></span><p class="text-[10px] text-white/70">Address<b class="block text-xs text-white">Oxford Ave. Cary, NC 27511</b></p></li><li class="flex items-center gap-3"><span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-8 w-8"><i class="fa-solid fa-envelope text-sm"></i></span><p class="text-[10px] text-white/70">Email<b class="block text-xs text-white">nwiger@yahoo.com</b></p></li><li class="flex items-center gap-3"><span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-8 w-8"><i class="fa-solid fa-phone text-sm"></i></span><p class="text-[10px] text-white/70">Phone<b class="block text-xs text-white">+537 547-6401</b></p></li></ul>
+        </div>
+        <div class="grid gap-8 pb-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1.3fr]">
+          <div><p class="max-w-[14rem] text-sm">Lorem ipsum dolor sit amet consectetur. Nec magna non egestas in. Enim habitant id nec maecenas.</p><div class="mt-5 flex gap-3"><a href="#" class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink" aria-label="Google"><i class="fa-brands fa-google-plus-g text-[10px]"></i></a><a href="#" class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-[10px]"></i></a><a href="#" class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in text-[10px]"></i></a><a href="#" class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink" aria-label="YouTube"><i class="fa-brands fa-youtube text-[10px]"></i></a></div></div>
+          <div><h3 class="font-head text-lg">Vehicles</h3><ul class="mt-3 space-y-2 text-xs text-white/80"><li><a href="aboutus.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Gallery</a></li><li><a href="#">Blog</a></li><li><a href="#">F.A.Q</a></li></ul></div><div><h3 class="font-head text-lg">Vehicles</h3><ul class="mt-3 space-y-2 text-xs text-white/80"><li><a href="aboutus.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Gallery</a></li><li><a href="#">Blog</a></li><li><a href="#">F.A.Q</a></li></ul></div>
+          <div class="w-fit self-start rounded-md border border-white/60 p-2"><h3 class="mb-2 text-sm font-medium">Download App</h3><div class="grid gap-2"><a href="#" class="flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-ink"><i class="fa-brands fa-apple text-xl"></i><span class="text-[9px] leading-tight">Download on the<b class="block text-sm">App Store</b></span></a><a href="#" class="flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-ink"><i class="fa-brands fa-google-play text-lg"></i><span class="text-[9px] leading-tight">GET IT ON<b class="block text-sm">Google Play</b></span></a></div></div>
+        </div>
+        <div class="flex flex-wrap items-center justify-between gap-4 border-t border-white/20 py-4 text-[11px]">
+          <p>© 2025 exemple.com. All rights reserved.</p>
+          <p><a href="#">Terms &amp; Conditions</a> <span class="mx-3">•</span> <a href="#">Privacy Notice</a></p>
+          <button id="toTop" class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-10 w-10 rounded-lg" aria-label="Back to top"><i class="fa-solid fa-arrow-up arrow-hover"></i></button>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

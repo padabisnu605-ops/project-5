@@ -1,0 +1,1628 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarHut | Home</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: '#0fbb7d',
+              ink: '#0a2a25',
+              mint: '#e0f7f0'
+            },
+            fontFamily: {
+              head: ['Outfit', 'sans-serif'],
+              body: ['"DM Sans"', 'sans-serif']
+            },
+          }
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+
+  <body class="bg-[#fafafa] font-body text-ink">
+
+    <!-- HEADER -->
+    <header class="absolute inset-x-0 top-0 z-20 border-b border-white/20 text-white">
+      <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+        <nav class="relative flex items-center py-4">
+
+          <div class="brand">
+            <a
+              href="index.html"
+              class="flex items-center gap-2 font-head text-xl font-medium"
+            >
+              <i class="fa-solid fa-car-side"></i>
+              CarHut
+            </a>
+          </div>
+
+          <div
+            class="ml-auto flex h-9 w-9 cursor-pointer flex-col justify-center gap-1.5 lg:hidden"
+            id="hamburger"
+            role="button"
+            aria-label="Menu"
+            aria-expanded="false"
+          >
+            <span class="h-0.5 w-full bg-white"></span>
+            <span class="h-0.5 w-full bg-white"></span>
+            <span class="h-0.5 w-full bg-white"></span>
+          </div>
+
+          <div class="navbar-links lg:mx-auto">
+            <ul
+              class="absolute inset-x-0 top-full z-30 mt-2 hidden flex-col gap-1 rounded-2xl bg-ink/95 p-3 lg:static lg:mt-0 lg:flex lg:flex-row lg:gap-0 lg:rounded-full lg:border lg:border-white/40 lg:bg-transparent lg:p-1"
+              id="navlinks"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15"
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="aboutus.html"
+                  class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15"
+                >
+                  About Us
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="vehicles.html"
+                  class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15"
+                >
+                  Vehicles
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="cardetails.html"
+                  class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15"
+                >
+                  Car Details
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="contact.html"
+                  class="block rounded-full px-4 py-2 text-sm hover:bg-white/10 aria-[current=page]:bg-white/15"
+                >
+                  Contact Us
+                </a>
+              </li>
+
+
+              <li class="lg:hidden">
+                <a
+                  href="#"
+                  class="block rounded-full bg-white px-4 py-2 text-center text-sm font-medium text-ink"
+                >
+                  Create Account
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="headerbtn hidden lg:block">
+            <a
+              href="#"
+              class="rounded-full bg-white px-6 py-3 text-sm font-medium text-ink"
+            >
+              Create Account
+            </a>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+
+      <!-- HERO -->
+      <section class="relative overflow-hidden bg-black text-white">
+
+        <img
+          src="images/01. -home-Hero Section.jpg"
+          alt="Hero Car"
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+
+        <div
+          class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10 relative pb-8 pt-32 sm:pt-40"
+        >
+
+          <p class="text-sm text-white/50">
+            Built to inspire
+          </p>
+
+          <h1 class="font-head text-4xl font-light sm:text-6xl">
+            Ranger Black
+          </h1>
+
+          <p class="mt-3 max-w-xs text-xs text-white/70">
+            Lorem ipsum dolor sit amet consectetur. Aliquam quis eget nunc
+            placerat ultrices. Turpis vitae quis morbi at suspend pretium arcu.
+          </p>
+
+          <a
+            href="vehicles.html"
+            class="mt-5 inline-flex items-center gap-3 rounded-full border border-white/60 py-1 pl-4 pr-1 text-xs"
+          >
+            Discover More
+
+            <span class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink">
+              <i class="fa-solid fa-arrow-up rotate-45 text-[9px]"></i>
+            </span>
+          </a>
+
+          <div
+            class="mt-12 grid grid-cols-2 divide-white/20 rounded-lg border border-white/20 bg-black/40 md:grid-cols-4 md:divide-x"
+          >
+            <div class="p-4">
+              <b class="font-head text-xl font-medium">50+</b>
+              <p class="text-[11px] text-white/50">Project Complete</p>
+            </div>
+
+            <div class="p-4">
+              <b class="font-head text-xl font-medium">100+</b>
+              <p class="text-[11px] text-white/50">Expert Teams</p>
+            </div>
+
+            <div class="p-4">
+              <b class="font-head text-xl font-medium">$3.5M</b>
+              <p class="text-[11px] text-white/50">Project Value</p>
+            </div>
+
+            <div class="p-4">
+              <b class="font-head text-xl font-medium">$3.5M</b>
+              <p class="text-[11px] text-white/50">Project Value</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- EXPLORE ALL VEHICLES -->
+      <section class="py-14 sm:py-16 lg:py-20">
+
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+          <h2 class="font-head text-2xl font-medium sm:text-3xl">
+            Explore All Vehicles
+          </h2>
+
+          <div data-tabs class="flex flex-wrap gap-5 mt-3">
+
+            <button
+              class="border-b-2 border-transparent pb-1 text-sm aria-selected:border-brand aria-selected:font-medium"
+              aria-selected="true"
+            >
+              In Stock
+            </button>
+
+            <button
+              class="border-b-2 border-transparent pb-1 text-sm aria-selected:border-brand aria-selected:font-medium"
+              aria-selected="false"
+            >
+              New Cars
+            </button>
+
+            <button
+              class="border-b-2 border-transparent pb-1 text-sm aria-selected:border-brand aria-selected:font-medium"
+              aria-selected="false"
+            >
+              Used Cars
+            </button>
+
+          </div>
+
+
+          <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+            <article class="relative overflow-hidden rounded-2xl bg-black text-white">
+
+              <img
+                src="images/card.jpg"
+                alt="C-Class 2025"
+                loading="lazy"
+                class="aspect-[266/250] w-full object-cover"
+              />
+
+              <button
+                class="absolute right-3 top-3 grid h-7 w-7 place-items-center rounded-md bg-white text-ink"
+                aria-label="Save car"
+              >
+                <i class="fa-regular fa-bookmark text-xs"></i>
+              </button>
+
+              <div class="relative -mt-14 bg-gradient-to-t from-black via-black/90 to-transparent p-4 pt-10">
+
+                <h3 class="font-head text-lg font-medium">
+                  <a href="cardetails.html">C-Class – 2025</a>
+                </h3>
+
+                <p class="text-xs text-white/70">
+                  4.0 D5 PowerPulse Momentum 5dr AWD…<br />
+                  Geartronic Estate
+                </p>
+
+                <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-white/80">
+                  <li><i class="fa-solid fa-gauge-high"></i> 50 Miles</li>
+                  <li><i class="fa-solid fa-gas-pump"></i> Petrol</li>
+                  <li><i class="fa-solid fa-gear"></i> Automatic</li>
+                </ul>
+
+                <p class="mt-2 text-lg font-semibold">
+                  $150,000
+                </p>
+
+              </div>
+            </article>
+
+
+            <article class="relative overflow-hidden rounded-2xl bg-black text-white">
+
+              <img
+                src="images/card (4).png"
+                alt="C-Class 2025"
+                loading="lazy"
+                class="aspect-[266/250] w-full object-cover"
+              />
+
+              <button
+                class="absolute right-3 top-3 grid h-7 w-7 place-items-center rounded-md bg-white text-ink"
+                aria-label="Save car"
+              >
+                <i class="fa-regular fa-bookmark text-xs"></i>
+              </button>
+
+              <div class="relative -mt-14 bg-gradient-to-t from-black via-black/90 to-transparent p-4 pt-10">
+
+                <h3 class="font-head text-lg font-medium">
+                  <a href="cardetails.html">C-Class – 2025</a>
+                </h3>
+
+                <p class="text-xs text-white/70">
+                  4.0 D5 PowerPulse Momentum 5dr AWD…<br />
+                  Geartronic Estate
+                </p>
+
+                <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-white/80">
+                  <li><i class="fa-solid fa-gauge-high"></i> 50 Miles</li>
+                  <li><i class="fa-solid fa-gas-pump"></i> Petrol</li>
+                  <li><i class="fa-solid fa-gear"></i> Automatic</li>
+                </ul>
+
+                <p class="mt-2 text-lg font-semibold">
+                  $150,000
+                </p>
+
+              </div>
+            </article>
+
+
+            <article class="relative overflow-hidden rounded-2xl bg-black text-white">
+
+              <img
+                src="images/card (5).png"
+                alt="C-Class 2025"
+                loading="lazy"
+                class="aspect-[266/250] w-full object-cover"
+              />
+
+              <button
+                class="absolute right-3 top-3 grid h-7 w-7 place-items-center rounded-md bg-white text-ink"
+                aria-label="Save car"
+              >
+                <i class="fa-regular fa-bookmark text-xs"></i>
+              </button>
+
+              <div class="relative -mt-14 bg-gradient-to-t from-black via-black/90 to-transparent p-4 pt-10">
+
+                <h3 class="font-head text-lg font-medium">
+                  <a href="cardetails.html">C-Class – 2025</a>
+                </h3>
+
+                <p class="text-xs text-white/70">
+                  4.0 D5 PowerPulse Momentum 5dr AWD…<br />
+                  Geartronic Estate
+                </p>
+
+                <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-white/80">
+                  <li><i class="fa-solid fa-gauge-high"></i> 50 Miles</li>
+                  <li><i class="fa-solid fa-gas-pump"></i> Petrol</li>
+                  <li><i class="fa-solid fa-gear"></i> Automatic</li>
+                </ul>
+
+                <p class="mt-2 text-lg font-semibold">
+                  $150,000
+                </p>
+
+              </div>
+            </article>
+
+          </div>
+
+
+          <div class="mt-8 text-center">
+
+            <a
+              href="vehicles.html"
+              class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm"
+            >
+              View All
+
+              <span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white">
+                <i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i>
+              </span>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- WHY CHOOSE US -->
+      <section class="py-14 sm:py-16 lg:py-20">
+
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+          <h2 class="font-head text-2xl font-medium sm:text-3xl">
+            Why Choose Us?
+          </h2>
+
+          <div class="mt-8 grid items-center gap-8 lg:grid-cols-[1fr_220px_1fr]">
+
+            <div class="grid gap-8">
+
+              <div>
+                <i class="fa-solid fa-tags text-3xl text-brand"></i>
+
+                <h3 class="mt-3 font-medium">
+                  Special Financing Offers
+                </h3>
+
+                <p class="mt-2 max-w-xs text-xs text-ink/70">
+                  Our stress-free finance department that can financial solutions to save you money.
+                </p>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-gem text-3xl text-brand"></i>
+
+                <h3 class="mt-3 font-medium">
+                  Trusted Car Dealership
+                </h3>
+
+                <p class="mt-2 max-w-xs text-xs text-ink/70">
+                  Our stress-free finance department that can financial solutions to save you money.
+                </p>
+              </div>
+
+            </div>
+
+
+            <img
+              src="images/black-isolated-car 1 (1).png"
+              alt="Black SUV"
+              loading="lazy"
+              class="mx-auto w-48 mix-blend-multiply lg:w-full"
+            />
+
+
+            <div class="grid gap-8">
+
+              <div>
+                <i class="fa-solid fa-file-invoice-dollar text-3xl text-brand"></i>
+
+                <h3 class="mt-3 font-medium">
+                  Transparent Pricing
+                </h3>
+
+                <p class="mt-2 max-w-xs text-xs text-ink/70">
+                  Our stress-free finance department that can financial solutions to save you money.
+                </p>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-screwdriver-wrench text-3xl text-brand"></i>
+
+                <h3 class="mt-3 font-medium">
+                  Expert Car Service
+                </h3>
+
+                <p class="mt-2 max-w-xs text-xs text-ink/70">
+                  Our stress-free finance department that can financial solutions to save you money.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- SHOP BOX CAR YOUR WAY -->
+      <section class="py-14 sm:py-16 lg:py-20">
+
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+          <h2 class="font-head text-2xl font-medium sm:text-3xl">
+            Shop Box Car Your Way
+          </h2>
+
+          <div data-tabs class="flex flex-wrap gap-5 mt-6">
+
+            <button
+              class="border-b-2 border-transparent pb-1 text-sm aria-selected:border-brand aria-selected:font-medium"
+              aria-selected="true"
+            >
+              New Cars For Sale
+            </button>
+
+            <button
+              class="border-b-2 border-transparent pb-1 text-sm aria-selected:border-brand aria-selected:font-medium"
+              aria-selected="false"
+            >
+              Used Cars For Sale
+            </button>
+
+            <button
+              class="border-b-2 border-transparent pb-1 text-sm aria-selected:border-brand aria-selected:font-medium"
+              aria-selected="false"
+            >
+              Browse By Type
+            </button>
+
+            <button
+              class="border-b-2 border-transparent pb-1 text-sm aria-selected:border-brand aria-selected:font-medium"
+              aria-selected="false"
+            >
+              Browse By Brand
+            </button>
+
+          </div>
+
+
+          <div class="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
+
+            <ul class="space-y-4 text-xs">
+              <li><a href="vehicles.html">Ford Cars</a></li>
+              <li><a href="vehicles.html">Honda Cars</a></li>
+              <li><a href="vehicles.html">Hyundai Cars</a></li>
+              <li><a href="vehicles.html">Infiniti Cars</a></li>
+              <li><a href="vehicles.html">Jaguar Cars</a></li>
+              <li><a href="vehicles.html">Jeep Cars</a></li>
+            </ul>
+
+            <ul class="space-y-4 text-xs">
+              <li><a href="vehicles.html">Chrysler Cars</a></li>
+              <li><a href="vehicles.html">Citroen Cars</a></li>
+              <li><a href="vehicles.html">Cupra Cars</a></li>
+              <li><a href="vehicles.html">Dacia Cars</a></li>
+              <li><a href="vehicles.html">DS Cars</a></li>
+              <li><a href="vehicles.html">Fiat Cars</a></li>
+            </ul>
+
+            <ul class="space-y-4 text-xs">
+              <li><a href="vehicles.html">Land Rover Cars</a></li>
+              <li><a href="vehicles.html">Lexus Cars</a></li>
+              <li><a href="vehicles.html">Mercedes-Benz Cars</a></li>
+              <li><a href="vehicles.html">Mazda Cars</a></li>
+              <li><a href="vehicles.html">MG Cars</a></li>
+              <li><a href="vehicles.html">Kia Cars</a></li>
+            </ul>
+
+            <ul class="space-y-4 text-xs">
+              <li><a href="vehicles.html">Abarth Cars</a></li>
+              <li><a href="vehicles.html">Romeo Cars</a></li>
+              <li><a href="vehicles.html">Audi Cars</a></li>
+              <li><a href="vehicles.html">Bentley Cars</a></li>
+              <li><a href="vehicles.html">BMW Cars</a></li>
+              <li><a href="vehicles.html">Chevrolet Cars</a></li>
+            </ul>
+
+            <ul class="space-y-4 text-xs">
+              <li><a href="vehicles.html">Mini Cars</a></li>
+              <li><a href="vehicles.html">Mitsubishi Cars</a></li>
+              <li><a href="vehicles.html">Nissan Cars</a></li>
+              <li><a href="vehicles.html">Peugeot Cars</a></li>
+              <li><a href="vehicles.html">Porsche Cars</a></li>
+              <li><a href="vehicles.html">Renault Cars</a></li>
+            </ul>
+
+          </div>
+
+
+          <div class="mt-8 text-center">
+
+            <a
+              href="vehicles.html"
+              class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm"
+            >
+              View All
+
+              <span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white">
+                <i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i>
+              </span>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- AUTO LOAN CALCULATOR -->
+      <section class="py-14 sm:py-16 lg:py-20">
+
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+          <div class="grid overflow-hidden rounded-2xl bg-ink text-white md:grid-cols-2">
+
+            <img
+              src="images/closeup-shot-person-thinking-buying-new-car-selling-vehicle 1 (1).png"
+              alt="Person planning car finance"
+              loading="lazy"
+              class="h-48 w-full object-cover md:h-full"
+            />
+
+            <div class="p-6 sm:p-8">
+
+              <h2 class="font-head text-2xl">
+                Auto Loan Calculator
+              </h2>
+
+              <p class="mt-2 text-xs text-white/70">
+                Use this car payment calculator to estimate monthly payments on your next new or used auto loan.
+              </p>
+
+              <div class="mt-5 grid grid-cols-2 gap-3">
+
+                <label class="block text-[10px] text-white/70">
+                  Car Price ($)
+                  <input
+                    id="lc-price"
+                    type="number"
+                    value="10000"
+                    class="mt-1 block w-full rounded-md bg-white px-3 py-2 text-sm text-ink"
+                  />
+                </label>
+
+                <label class="block text-[10px] text-white/70">
+                  Interest Rate (%)
+                  <input
+                    id="lc-rate"
+                    type="number"
+                    value="5"
+                    class="mt-1 block w-full rounded-md bg-white px-3 py-2 text-sm text-ink"
+                  />
+                </label>
+
+                <label class="block text-[10px] text-white/70">
+                  Loan Term (year)
+                  <input
+                    id="lc-term"
+                    type="number"
+                    value="5"
+                    class="mt-1 block w-full rounded-md bg-white px-3 py-2 text-sm text-ink"
+                  />
+                </label>
+
+                <label class="block text-[10px] text-white/70">
+                  Down Payment ($)
+                  <input
+                    id="lc-down"
+                    type="number"
+                    value="5000"
+                    class="mt-1 block w-full rounded-md bg-white px-3 py-2 text-sm text-ink"
+                  />
+                </label>
+
+              </div>
+
+              <button
+                id="calcBtn"
+                class="mt-5 w-full rounded-md border border-white/30 py-2 text-sm"
+              >
+                Calculate
+              </button>
+
+              <p id="lc-out" class="mt-3 text-center text-sm text-brand"></p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- BROWSE BY TYPE -->
+      <section class="py-14 sm:py-16 lg:py-20">
+
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+          <h2 class="font-head text-2xl font-medium sm:text-3xl">
+            Browse by Type
+          </h2>
+
+          <div class="mt-6 grid gap-4 sm:grid-cols-2">
+
+            <a
+              href="vehicles.html"
+              class="relative block overflow-hidden rounded-2xl"
+            >
+              <img
+                src="images/img (9).png"
+                alt="SUV"
+                loading="lazy"
+                class="h-40 w-full object-cover sm:h-52"
+              />
+
+              <span class="absolute bottom-3 left-3 rounded-full bg-white px-4 py-1.5 text-xs">
+                <i class="fa-solid fa-car-side mr-2"></i>
+                SUV
+              </span>
+            </a>
+
+            <a
+              href="vehicles.html"
+              class="relative block overflow-hidden rounded-2xl"
+            >
+              <img
+                src="images/img (10).png"
+                alt="Sedan"
+                loading="lazy"
+                class="h-40 w-full object-cover sm:h-52"
+              />
+
+              <span class="absolute bottom-3 left-3 rounded-full bg-white px-4 py-1.5 text-xs">
+                <i class="fa-solid fa-car-side mr-2"></i>
+                Sedan
+              </span>
+            </a>
+
+          </div>
+
+
+          <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
+
+            <a
+              href="vehicles.html"
+              class="relative block overflow-hidden rounded-2xl"
+            >
+              <img
+                src="images/img (11).png"
+                alt="Hatchback"
+                loading="lazy"
+                class="h-40 w-full object-cover sm:h-52"
+              />
+
+              <span class="absolute bottom-3 left-3 rounded-full bg-white px-4 py-1.5 text-xs">
+                <i class="fa-solid fa-car-side mr-2"></i>
+                Hatchback
+              </span>
+            </a>
+
+
+            <a
+              href="vehicles.html"
+              class="relative block overflow-hidden rounded-2xl"
+            >
+              <img
+                src="images/img (12).png"
+                alt="Hybrid"
+                loading="lazy"
+                class="h-40 w-full object-cover sm:h-52"
+              />
+
+              <span class="absolute bottom-3 left-3 rounded-full bg-white px-4 py-1.5 text-xs">
+                <i class="fa-solid fa-car-side mr-2"></i>
+                Hybrid
+              </span>
+            </a>
+
+
+            <a
+              href="vehicles.html"
+              class="relative block overflow-hidden rounded-2xl col-span-2 sm:col-span-1"
+            >
+              <img
+                src="images/img (13).png"
+                alt="Coupe"
+                loading="lazy"
+                class="h-40 w-full object-cover sm:h-52"
+              />
+
+              <span class="absolute bottom-3 left-3 rounded-full bg-white px-4 py-1.5 text-xs">
+                <i class="fa-solid fa-car-side mr-2"></i>
+                Coupe
+              </span>
+            </a>
+
+          </div>
+
+
+          <div class="mt-8 text-center">
+
+            <a
+              href="vehicles.html"
+              class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm"
+            >
+              View All
+
+              <span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white">
+                <i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i>
+              </span>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- CUSTOMER REVIEWS -->
+      <section class="py-14 sm:py-16 lg:py-20">
+
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+
+            <h2 class="font-head text-2xl font-medium sm:text-3xl">
+              What our customers say
+            </h2>
+
+            <p class="max-w-xs text-xs">
+              Rated 4.7 / 5 based on 28,370 reviews Showing our 4 &amp; 5 star reviews
+            </p>
+
+          </div>
+
+
+          <div class="relative mt-6 h-[403px] overflow-hidden rounded-3xl">
+
+            <img
+              src="images/Frame 266 (1).png"
+              alt="Customer reviews"
+              class="absolute inset-0 h-full w-full object-cover object-top"
+            />
+
+
+            <div
+              id="reviewTrack"
+              class="absolute inset-0 flex items-center justify-center gap-4 overflow-x-auto p-4 max-[639px]:justify-start md:translate-y-[70px]"
+            >
+
+              <article class="w-60 shrink-0 rounded-2xl border border-white/70 bg-mint/95 p-3">
+
+                <header class="flex items-center gap-2 text-xs">
+
+                  <span class="grid h-6 w-6 place-items-center rounded-full bg-ink/10">
+                    <i class="fa-solid fa-user text-[10px]"></i>
+                  </span>
+
+                  Ali Tufan
+
+                  <span class="ml-auto text-ink/60">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Verified
+                  </span>
+
+                </header>
+
+                <p class="mt-2 text-[10px] text-amber-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+
+                <h3 class="mt-1 text-sm font-medium">
+                  Sales process was simple and easy
+                </h3>
+
+                <p class="mt-1 text-[10px] text-ink/70">
+                  Sales process was simple and easy, maximillion was friendly and i didn’t feel…
+                </p>
+
+              </article>
+
+
+              <article class="w-60 shrink-0 rounded-2xl border border-white/70 bg-mint/95 p-3">
+
+                <header class="flex items-center gap-2 text-xs">
+
+                  <span class="grid h-6 w-6 place-items-center rounded-full bg-ink/10">
+                    <i class="fa-solid fa-user text-[10px]"></i>
+                  </span>
+
+                  Ali Tufan
+
+                  <span class="ml-auto text-ink/60">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Verified
+                  </span>
+
+                </header>
+
+                <p class="mt-2 text-[10px] text-amber-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+
+                <h3 class="mt-1 text-sm font-medium">
+                  Sales process was simple and easy
+                </h3>
+
+                <p class="mt-1 text-[10px] text-ink/70">
+                  Sales process was simple and easy, maximillion was friendly and i didn’t feel…
+                </p>
+
+              </article>
+
+
+              <article class="w-60 shrink-0 rounded-2xl border border-white/70 bg-mint/95 p-3">
+
+                <header class="flex items-center gap-2 text-xs">
+
+                  <span class="grid h-6 w-6 place-items-center rounded-full bg-ink/10">
+                    <i class="fa-solid fa-user text-[10px]"></i>
+                  </span>
+
+                  Ali Tufan
+
+                  <span class="ml-auto text-ink/60">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Verified
+                  </span>
+
+                </header>
+
+                <p class="mt-2 text-[10px] text-amber-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+
+                <h3 class="mt-1 text-sm font-medium">
+                  Sales process was simple and easy
+                </h3>
+
+                <p class="mt-1 text-[10px] text-ink/70">
+                  Sales process was simple and easy, maximillion was friendly and i didn’t feel…
+                </p>
+
+              </article>
+
+
+              <article class="w-60 shrink-0 rounded-2xl border border-white/70 bg-mint/95 p-3">
+
+                <header class="flex items-center gap-2 text-xs">
+
+                  <span class="grid h-6 w-6 place-items-center rounded-full bg-ink/10">
+                    <i class="fa-solid fa-user text-[10px]"></i>
+                  </span>
+
+                  Ali Tufan
+
+                  <span class="ml-auto text-ink/60">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Verified
+                  </span>
+
+                </header>
+
+                <p class="mt-2 text-[10px] text-amber-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+
+                <h3 class="mt-1 text-sm font-medium">
+                  Sales process was simple and easy
+                </h3>
+
+                <p class="mt-1 text-[10px] text-ink/70">
+                  Sales process was simple and easy, maximillion was friendly and i didn’t feel…
+                </p>
+
+              </article>
+
+            </div>
+          </div>
+
+
+          <div class="mt-4 flex gap-6 text-sm">
+
+            <button id="prev" aria-label="Previous review">
+              <i class="fa-solid fa-chevron-left arrow-hover"></i>
+            </button>
+
+            <button id="next" aria-label="Next review">
+              <i class="fa-solid fa-chevron-right arrow-hover"></i>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- OUR TEAM -->
+      <section class="py-14 sm:py-16 lg:py-20">
+
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+          <h2 class="font-head text-2xl font-medium sm:text-3xl">
+            Our Team
+          </h2>
+
+
+          <!-- TEAM IMAGES -->
+          <div class="mt-6 grid gap-5 sm:grid-cols-3">
+
+            <!-- Team 1 -->
+            <figure class="min-w-0">
+
+              <img
+                src="images/team1.jpg (1).png"
+                alt="Courtney Henry"
+                loading="lazy"
+                class="h-64 w-full rounded-2xl object-cover object-top sm:h-52 lg:h-80"
+              />
+
+              <figcaption class="mt-3 text-sm leading-tight">
+
+                Courtney Henry
+
+                <span class="mt-1 block text-[11px] text-ink/60">
+                  Development Manager
+                </span>
+
+              </figcaption>
+
+            </figure>
+
+
+            <!-- Team 2 -->
+            <figure class="min-w-0">
+
+              <img
+                src="images/team2.jpg (3).png"
+                alt="Jerome Bell"
+                loading="lazy"
+                class="h-64 w-full rounded-2xl object-cover object-top sm:h-52 lg:h-80"
+              />
+
+              <figcaption class="mt-3 text-sm leading-tight">
+
+                Jerome Bell
+
+                <span class="mt-1 block text-[11px] text-ink/60">
+                  Software Tester
+                </span>
+
+              </figcaption>
+
+            </figure>
+
+
+            <!-- Team 3 -->
+            <figure class="min-w-0">
+
+              <img
+                src="images/team2.jpg (4).png"
+                alt="Jerome Bell"
+                loading="lazy"
+                class="h-64 w-full rounded-2xl object-cover object-top sm:h-52 lg:h-80"
+              />
+
+              <figcaption class="mt-3 text-sm leading-tight">
+
+                Jerome Bell
+
+                <span class="mt-1 block text-[11px] text-ink/60">
+                  Software Tester
+                </span>
+
+              </figcaption>
+
+            </figure>
+
+          </div>
+
+
+          <!-- VIEW ALL -->
+          <div class="mt-8 text-center">
+
+            <a
+              href="#"
+              class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm"
+            >
+
+              View All
+
+              <span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white">
+
+                <i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i>
+
+              </span>
+
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- LATEST BLOG POSTS -->
+      <section class="py-14 sm:py-16 lg:py-20">
+
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+          <h2 class="font-head text-2xl font-medium sm:text-3xl">
+            Latest Blog Posts
+          </h2>
+
+          <div class="mt-6 grid gap-5 sm:grid-cols-3">
+
+            <article class="rounded-2xl bg-mint p-3 shadow-md">
+
+              <div class="relative">
+
+                <img
+                  src="images/img (14).png"
+                  alt="Blog post 1"
+                  loading="lazy"
+                  class="h-44 w-full rounded-xl object-cover"
+                />
+
+                <span class="absolute left-3 top-3 rounded-full bg-white px-3 py-0.5 text-[10px]">
+                  Exterior
+                </span>
+
+              </div>
+
+              <p class="mt-4 text-[11px] text-ink/70">
+                Admin
+                <span class="ml-3">November 22, 2023</span>
+              </p>
+
+              <h3 class="mt-1 text-sm font-medium">
+                BMW X5 Gold 2024 Sport Review: Light on Sport
+              </h3>
+
+            </article>
+
+
+            <article class="rounded-2xl bg-mint p-3 shadow-md">
+
+              <div class="relative">
+
+                <img
+                  src="images/img (15).png"
+                  alt="Blog post 2"
+                  loading="lazy"
+                  class="h-44 w-full rounded-xl object-cover"
+                />
+
+                <span class="absolute left-3 top-3 rounded-full bg-white px-3 py-0.5 text-[10px]">
+                  Exterior
+                </span>
+
+              </div>
+
+              <p class="mt-4 text-[11px] text-ink/70">
+                Admin
+                <span class="ml-3">November 22, 2023</span>
+              </p>
+
+              <h3 class="mt-1 text-sm font-medium">
+                BMW X5 Gold 2024 Sport Review: Light on Sport
+              </h3>
+
+            </article>
+
+
+            <article class="rounded-2xl bg-mint p-3 shadow-md">
+
+              <div class="relative">
+
+                <img
+                  src="images/img (16).png"
+                  alt="Blog post 3"
+                  loading="lazy"
+                  class="h-44 w-full rounded-xl object-cover"
+                />
+
+                <span class="absolute left-3 top-3 rounded-full bg-white px-3 py-0.5 text-[10px]">
+                  Exterior
+                </span>
+
+              </div>
+
+              <p class="mt-4 text-[11px] text-ink/70">
+                Admin
+                <span class="ml-3">November 22, 2023</span>
+              </p>
+
+              <h3 class="mt-1 text-sm font-medium">
+                BMW X5 Gold 2024 Sport Review: Light on Sport
+              </h3>
+
+            </article>
+
+          </div>
+
+
+          <div class="mt-8 text-center">
+
+            <a
+              href="#"
+              class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm"
+            >
+
+              View All
+
+              <span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white">
+                <i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i>
+              </span>
+
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- BANNER -->
+      <section class="relative overflow-hidden bg-black text-white">
+
+        <img
+          src="images/Background (1).png"
+          alt="Finding the right car"
+          class="absolute inset-0 h-full w-full object-cover object-center"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+
+        <div class="relative z-10 mx-auto w-full max-w-[1280px] px-5 py-16 sm:px-8 sm:py-24 lg:px-10">
+
+          <h2 class="max-w-md font-head text-3xl font-light sm:text-5xl">
+            We make finding the right car simple
+          </h2>
+
+          <a
+            href="vehicles.html"
+            class="mt-6 inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2 text-sm"
+          >
+            Find Out More
+
+            <i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i>
+          </a>
+
+        </div>
+      </section>
+
+
+      <!-- JOIN CARHUT -->
+      <section class="py-14 sm:py-16 lg:py-20">
+
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+          <div class="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+
+            <div>
+
+              <h2 class="font-head text-2xl font-medium">
+                Join CarHut
+              </h2>
+
+              <p class="mt-1 text-xs">
+                Receive pricing updates, shopping tips &amp; more!
+              </p>
+
+            </div>
+
+
+            <form
+              id="joinForm"
+              class="flex w-full max-w-md overflow-hidden rounded-full border border-ink/30 bg-white p-1"
+            >
+
+              <input
+                type="email"
+                required
+                placeholder="Your email address"
+                class="min-w-0 flex-1 bg-transparent px-4 text-sm outline-none"
+              />
+
+              <button class="rounded-full bg-ink px-5 py-2 text-xs text-white">
+                Sign Up
+              </button>
+
+            </form>
+
+          </div>
+
+          <p id="joinMsg" class="mt-3 hidden text-sm text-brand">
+            Thanks for signing up!
+          </p>
+
+        </div>
+      </section>
+
+
+      <!-- PREMIUM BRANDS -->
+      <section class="py-14 sm:py-16 lg:py-20">
+
+        <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+          <div class="flex flex-wrap items-center justify-between gap-4">
+
+            <h2 class="font-head text-2xl font-medium sm:text-3xl">
+              Explore Our Premium Brands
+            </h2>
+
+            <a
+              href="vehicles.html"
+              class="inline-flex items-center gap-4 rounded-full border border-ink/70 py-1 pl-5 pr-1 text-sm"
+            >
+              Show All Brands
+
+              <span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-white">
+                <i class="fa-solid fa-arrow-up rotate-45 text-[10px] arrow-hover"></i>
+              </span>
+
+            </a>
+
+          </div>
+
+
+          <ul class="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6">
+
+            <li class="text-center">
+              <img
+                src="images/b1.jpg (1).png"
+                alt="Audi logo"
+                loading="lazy"
+                class="mx-auto h-14 object-contain"
+              />
+              <p class="mt-2 text-sm">Audi</p>
+            </li>
+
+            <li class="text-center">
+              <img
+                src="images/b2.jpg (1).png"
+                alt="BMW logo"
+                loading="lazy"
+                class="mx-auto h-14 object-contain"
+              />
+              <p class="mt-2 text-sm">BMW</p>
+            </li>
+
+            <li class="text-center">
+              <img
+                src="images/b3.jpg (1).png"
+                alt="Ford logo"
+                loading="lazy"
+                class="mx-auto h-14 object-contain"
+              />
+              <p class="mt-2 text-sm">Ford</p>
+            </li>
+
+            <li class="text-center">
+              <img
+                src="images/b4.jpg (1).png"
+                alt="Mercedes Benz logo"
+                loading="lazy"
+                class="mx-auto h-14 object-contain"
+              />
+              <p class="mt-2 text-sm">Mercedes Benz</p>
+            </li>
+
+            <li class="text-center">
+              <img
+                src="images/b5.jpg (1).png"
+                alt="Peugeot logo"
+                loading="lazy"
+                class="mx-auto h-14 object-contain"
+              />
+              <p class="mt-2 text-sm">Peugeot</p>
+            </li>
+
+            <li class="text-center">
+              <img
+                src="images/b6.jpg (1).png"
+                alt="Volkswagen logo"
+                loading="lazy"
+                class="mx-auto h-14 object-contain"
+              />
+              <p class="mt-2 text-sm">Volkswagen</p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-[#06211d] text-white">
+
+      <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10">
+
+        <div class="flex flex-wrap items-center justify-between gap-6 py-10">
+
+          <a
+            href="index.html"
+            class="flex items-center gap-2 font-head text-xl font-medium"
+          >
+            <i class="fa-solid fa-car-side"></i>
+            CarHut
+          </a>
+
+
+          <ul class="grid gap-5 sm:grid-cols-3 sm:gap-10">
+
+            <li class="flex items-center gap-3">
+
+              <span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-8 w-8">
+                <i class="fa-solid fa-location-dot text-sm"></i>
+              </span>
+
+              <p class="text-[10px] text-white/70">
+                Address
+
+                <b class="block text-xs text-white">
+                  Oxford Ave. Cary, NC 27511
+                </b>
+              </p>
+
+            </li>
+
+
+            <li class="flex items-center gap-3">
+
+              <span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-8 w-8">
+                <i class="fa-solid fa-envelope text-sm"></i>
+              </span>
+
+              <p class="text-[10px] text-white/70">
+                Email
+
+                <b class="block text-xs text-white">
+                  nwiger@yahoo.com
+                </b>
+              </p>
+
+            </li>
+
+
+            <li class="flex items-center gap-3">
+
+              <span class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-8 w-8">
+                <i class="fa-solid fa-phone text-sm"></i>
+              </span>
+
+              <p class="text-[10px] text-white/70">
+                Phone
+
+                <b class="block text-xs text-white">
+                  +537 547-6401
+                </b>
+              </p>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="grid gap-8 pb-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1.3fr]">
+
+          <div>
+
+            <p class="max-w-[14rem] text-sm">
+              Lorem ipsum dolor sit amet consectetur. Nec magna non egestas
+              in. Enim habitant id nec maecenas.
+            </p>
+
+            <div class="mt-5 flex gap-3">
+
+              <a
+                href="#"
+                class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink"
+                aria-label="Google"
+              >
+                <i class="fa-brands fa-google-plus-g text-[10px]"></i>
+              </a>
+
+              <a
+                href="#"
+                class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink"
+                aria-label="Facebook"
+              >
+                <i class="fa-brands fa-facebook-f text-[10px]"></i>
+              </a>
+
+              <a
+                href="#"
+                class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in text-[10px]"></i>
+              </a>
+
+              <a
+                href="#"
+                class="grid h-6 w-6 place-items-center rounded-full bg-white text-ink"
+                aria-label="YouTube"
+              >
+                <i class="fa-brands fa-youtube text-[10px]"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div>
+
+            <h3 class="font-head text-lg">
+              Vehicles
+            </h3>
+
+            <ul class="mt-3 space-y-2 text-xs text-white/80">
+
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="vehicles.html">Gallery</a></li>
+              <li><a href="index.html">Blog</a></li>
+              <li><a href="cardetails.html">F.A.Q</a></li>
+
+            </ul>
+
+          </div>
+
+
+          <div>
+
+            <h3 class="font-head text-lg">
+              Vehicles
+            </h3>
+
+            <ul class="mt-3 space-y-2 text-xs text-white/80">
+
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="vehicles.html">Gallery</a></li>
+              <li><a href="index.html">Blog</a></li>
+              <li><a href="cardetails.html">F.A.Q</a></li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="w-fit self-start rounded-md border border-white/60 p-2">
+
+            <h3 class="mb-2 text-sm font-medium">
+              Download App
+            </h3>
+
+            <div class="grid gap-2">
+
+              <a
+                href="index.html"
+                class="flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-ink"
+              >
+                <i class="fa-brands fa-apple text-xl"></i>
+
+                <span class="text-[9px] leading-tight">
+                  Download on the
+                  <b class="block text-sm">
+                    App Store
+                  </b>
+                </span>
+              </a>
+
+
+              <a
+                href="#"
+                class="flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-ink"
+              >
+                <i class="fa-brands fa-google-play text-lg"></i>
+
+                <span class="text-[9px] leading-tight">
+                  GET IT ON
+                  <b class="block text-sm">
+                    Google Play
+                  </b>
+                </span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="flex flex-wrap items-center justify-between gap-4 border-t border-white/20 py-4 text-[11px]">
+
+          <p>
+            © 2025 exemple.com. All rights reserved.
+          </p>
+
+          <p>
+            <a href="#">Terms &amp; Conditions</a>
+
+            <span class="mx-3">•</span>
+
+            <a href="#">Privacy Notice</a>
+          </p>
+
+
+          <button
+            id="toTop"
+            class="grid shrink-0 place-items-center rounded-full bg-brand text-white h-10 w-10 rounded-lg"
+            aria-label="Back to top"
+          >
+            <i class="fa-solid fa-arrow-up arrow-hover"></i>
+          </button>
+
+        </div>
+
+      </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
